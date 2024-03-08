@@ -1,0 +1,6 @@
+#!ipxe
+
+dhcp
+set iso-url https://github.com/innovaassolutions/innovaas-umh/releases/download/v1.0.0/ipxe_x86_64_efi.iso
+initrd ${iso-url}
+chain memdisk iso raw
